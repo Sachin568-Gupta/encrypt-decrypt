@@ -1,0 +1,22 @@
+{
+  "name": "encrypt-decrypt",
+  "version": "1.0.0",
+  "description": "package for encryption and decription of any string or number",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sachin568-Gupta/encrypt-decrypt.git"
+  },
+  "keywords": [
+    "encrypt-decrypt"
+  ],
+  "author": "Sachin Gupta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sachin568-Gupta/encrypt-decrypt/issues"
+  },
+  "homepage": "https://github.com/Sachin568-Gupta/encrypt-decrypt#readme"
+}
