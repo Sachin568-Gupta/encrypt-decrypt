@@ -1,5 +1,5 @@
-class Encryption {
-  cipher = (salt) => {
+// class Encryption {
+  const cipher = (salt) => {
     const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
     const byteHex = (n) => ("0" + Number(n).toString(16)).substr(-2);
     const applySaltToChar = (code) =>
@@ -12,7 +12,7 @@ class Encryption {
         .map(byteHex)
         .join("");
   };
-  decipher = (salt) => {
+ const decipher = (salt) => {
     const textToChars = (text) => text.split("").map((c) => c.charCodeAt(0));
     const applySaltToChar = (code) =>
       textToChars(salt).reduce((a, b) => a ^ b, code);
@@ -25,17 +25,20 @@ class Encryption {
         .join("");
   };
 
-  encryption_key(secret_key, text) {
+  function encryption_key(secret_key, text) {
     const myCipher = cipher(secret_key);
     return myCipher(text);
   }
-  decryption_key(secret_key, text) {
+  function decryption_key(secret_key, text) {
     const myDecipher = decipher(secret_key);
     return myDecipher(text);
   }
-}
+// }
 
-module.exports = Encryption;
+module.exports = {
+  encryption_key,
+  decryption_key
+};
 
 // To create a cipher
 // const myCipher = cipher('mySecretSalt')
