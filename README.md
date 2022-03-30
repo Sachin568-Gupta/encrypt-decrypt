@@ -4,12 +4,12 @@
 Encrypt and decrypt text
 
 ## Install
-npm i encrypt-decrypt
+npm i encrypt-decrypt-string
 
 ## Sample
 ````
 STEP 1
-const {encryption_key,decryption_key} = require('encrypt-decrypt')
+const {encryption_key,decryption_key} = require('encrypt-decrypt-string')
 
 
 STEP 2 for encryption

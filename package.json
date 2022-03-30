@@ -1,5 +1,5 @@
 {
-  "name": "encrypt-decrypt",
+  "name": "encrypt-decrypt-string",
   "version": "1.0.0",
   "description": "package for encryption and decription of any string or number",
   "main": "index.js",
